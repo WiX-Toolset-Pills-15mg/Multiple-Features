@@ -1,0 +1,1 @@
+msiexec /x MultipleFeatures.msi /l*vx uninstall.log
