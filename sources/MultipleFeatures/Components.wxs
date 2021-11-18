@@ -23,12 +23,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <ComponentGroup Id="FileComponents" Directory="INSTALLFOLDER">
             <Component Id="DummyFileComponent" Guid="5CC4D404-CFB4-4E63-93EB-AD5ED4984BB6">
-                <File Id="DummyFile"  Source="$(var.ProjectDir)dummy.txt" KeyPath="yes"/>
+                <File Id="DummyFile" Source="$(var.ProjectDir)dummy.txt" KeyPath="yes"/>
             </Component>
         </ComponentGroup>
 
         <Component Id="RegistryComponent" Guid="A98A6B33-50AD-4123-895A-8E7199285429" Directory="INSTALLFOLDER">
-            <RegistryValue Root="HKCU" Key="Software\DustInTheWind\MultipleFeatures" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+            <RegistryValue
+                Root="HKCU"
+                Key="Software\DustInTheWind\MultipleFeatures"
+                Name="installed"
+                Type="integer"
+                Value="1"
+                KeyPath="yes"/>
         </Component>
+
     </Fragment>
 </Wix>
