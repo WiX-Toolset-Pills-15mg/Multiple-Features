@@ -1,4 +1,7 @@
 WiX Toolset Pills - Multiple Features
 ==============================================================================
 
-This is a dummy file.
+This file is part of the "Multiple Features" tutorial.
+
+For more details please chech the GitHub repository:
+https://github.com/WiX-Toolset-Pills-15mg/Multiple-Features
