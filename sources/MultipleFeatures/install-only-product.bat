@@ -1,0 +1,1 @@
+msiexec /i MultipleFeatures.msi /l*vx install-only-product.log ADDLOCAL="ProductFeature"

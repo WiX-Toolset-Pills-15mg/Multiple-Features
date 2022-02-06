@@ -1,1 +1,1 @@
-msiexec /i MultipleFeatures.msi /l*vx install.log ADDLOCAL="ALL"
+msiexec /i MultipleFeatures.msi /l*vx install-all.log ADDLOCAL="ALL"

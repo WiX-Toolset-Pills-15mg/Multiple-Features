@@ -1,7 +1,10 @@
-WiX Toolset Pills - Multiple Features
-==============================================================================
+﻿WiX Toolset Pills 15mg - Multiple Features
+====================================================================================================
 
-This file is part of the "Multiple Features" tutorial.
+This file is part of the "Multiple Features" pill.
+
+This pill demonstrates how to create two features and decide at runtime if all or only one of them
+is installed.
 
 For more details please chech the GitHub repository:
 https://github.com/WiX-Toolset-Pills-15mg/Multiple-Features

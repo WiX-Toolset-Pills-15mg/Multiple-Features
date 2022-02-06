@@ -2,7 +2,7 @@
 
 <!--
 WiX Toolset Pills 15mg
-Copyright (C) 2019-2021 Dust in the Wind
+Copyright (C) 2019-2022 Dust in the Wind
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -16,6 +16,23 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!--
+====================================================================================================
+START: Overview
+====================================================================================================
+
+This pill demonstrates how to create two features and decide at runtime if all or only one of them
+to be installed.
+
+A feature is the smallest unit that can be selected by the user to be installed. At run time, the
+user can decide which features to install.
+
+If chosen for installation, a feature will install all its components. There is no way to install
+just a subset of its components.
+
+NEXT: TBD
 -->
 
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
@@ -35,23 +52,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
         <MediaTemplate />
 
-        <!--
-        This is a demo of how to create multiple features.
-        
-        A feature is the smallest unit that can be selected by the user to be installed.
-        At run time, the user can decide which features to install.
-        
-        If chosen for installation, a feature will install all its components.
-        There is no way to install just a subset of its components.
-        If this is needed, multiple features must be created.
-        -->
+        <Feature
+            Id="ProductFeature"
+            Title="Deploy Main Files"
+            Level="1">
 
-        <Feature Id="ProductFeature" Title="Main Files" Level="1">
-            <ComponentGroupRef Id="FileComponents" />
+            <ComponentGroupRef Id="ProductComponents" />
         </Feature>
 
-        <Feature Id="RegistryFeature" Title="Update in Registry" Level="1">
-            <ComponentRef Id="RegistryComponent" />
+        <Feature
+            Id="TranslationsFeature"
+            Title="Translated files"
+            Level="1">
+
+            <ComponentGroupRef Id="TranslationsComponents" />
         </Feature>
 
     </Product>

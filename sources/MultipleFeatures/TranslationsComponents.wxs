@@ -21,13 +21,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Fragment>
 
-        <Directory Id="TARGETDIR" Name="SourceDir">
-            <Directory Id="ProgramFilesFolder">
-                <Directory Id="PillsDirectory" Name="WiX Toolset Pills 15mg">
-                    <Directory Id="INSTALLFOLDER" Name="Multiple Features"/>
-                </Directory>
-            </Directory>
-        </Directory>
+        <ComponentGroup Id="TranslationsComponents" Directory="INSTALLFOLDER">
+
+            <Component Id="FrenchComponent" Guid="A98A6B33-50AD-4123-895A-8E7199285429">
+                <File
+                    Id="DummyFileFr"
+                    Source="$(var.ProjectDir)dummy-fr.txt"
+                    KeyPath="yes" />
+            </Component>
+
+            <Component Id="RomanianComponent" Guid="89417CC6-4F6B-40E2-AE59-9526654374D6">
+                <File
+                    Id="DummyFileRo"
+                    Source="$(var.ProjectDir)dummy-ro.txt"
+                    KeyPath="yes" />
+            </Component>
+
+        </ComponentGroup>
 
     </Fragment>
 </Wix>

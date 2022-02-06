@@ -1,15 +1,42 @@
 # Multiple Features
 
-## Question
-
-- How to create multiple features?
-
 ## Description
 
 This tutorial contains a WiX project with two features:
 
-- one deploys a single file in "C:\Program Files\Dust in the Wind\Multiple Features - WiX Toolset Pill" directory.
-- the second feature creates a value in registry.
+- one that deploys a single file: "dummy.txt".
+- and another feature creates a value in Windows Registry.
+
+## How to use
+
+### a) Tutorial (article)
+
+-  TBD
+
+### b) Code example
+
+- [sources](sources)
+- I provided the complete Visual Studio solution that solves the described problem. Use it if you need to test it by yourself, in your environment or if you have further ideas that you want to verify.
+
+### c) Code notes
+
+- TBD
+
+### d) Log file examples
+
+- [doc/logs](doc/logs)
+- Sometimes a quick look into the log files may be useful, but running the installer each time is cumbersome. I generated the log files for the meaningful scenarios and I placed them into this directory. Have a look when needed.
+
+## Discussions and Suggestions
+
+[GitHub Discussions](https://github.com/WiX-Toolset-Pills-15mg/Multiple-Features/discussions)
+
+Fill free to use the discussions page whenever needed:
+
+- Do you have an improvement suggestion?
+- Is there any typo in the articles or bug in the code?
+- I appreciate any information on how you used this tutorial and if it was useful to you or not.
+- Do you have any other questions?
 
 ## Donations
 

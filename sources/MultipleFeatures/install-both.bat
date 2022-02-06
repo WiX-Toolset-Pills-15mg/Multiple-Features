@@ -1,1 +1,1 @@
-msiexec /i MultipleFeatures.msi /l*vx install.log ADDLOCAL="ProductFeature,RegistryFeature"
+msiexec /i MultipleFeatures.msi /l*vx install-both.log ADDLOCAL="ProductFeature,TranslationsFeature"

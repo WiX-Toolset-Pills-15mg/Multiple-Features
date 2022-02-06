@@ -1,0 +1,10 @@
+﻿WiX Toolset Pills 15mg - Multiple Features
+====================================================================================================
+
+Ce fichier fait partie de la pilule "Multiple Features".
+
+Cette pilule montre comment créer deux fonctionnalités et décider au moment de l'exécution si toutes
+ou une seule d'entre elles est installé.
+
+Pour plus de détails, veuillez consulter le référentiel GitHub:
+https://github.com/WiX-Toolset-Pills-15mg/Multiple-Features

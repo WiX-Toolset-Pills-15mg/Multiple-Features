@@ -1,0 +1,10 @@
+﻿WiX Toolset Pills 15mg - Multiple Features
+====================================================================================================
+
+Acest fișier face parte din pastila "Multiple Features".
+
+Această pastilă demonstrează cum se pot creea două feature-uri și cum să decizi la run-time dacă
+doar una sau amândouă să fie instalate.
+
+Pentru mai multe detalii consultați repository-ul de pe GitHub:
+https://github.com/WiX-Toolset-Pills-15mg/Multiple-Features
